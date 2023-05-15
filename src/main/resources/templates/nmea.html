@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>Рассчет пройденного пути</h2>
+    <p th:each="wayForDay : ${way.getWayForDay()}">
+        <span th:text="${wayForDay.getKey().toString()}"></span> пройдено <span th:text="${wayForDay.getValue()}"></span>
+    </p>
+</body>
+</html>
